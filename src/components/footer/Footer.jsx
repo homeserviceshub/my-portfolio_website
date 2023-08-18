@@ -28,7 +28,7 @@ const Footer = () => {
             data-aos="fade-up"
             data-aos-duration="1200"
             target="_blank"
-            href="https://api.whatsapp.com/send?phone=8054875055"
+            href="https://api.whatsapp.com/send?phone=+918054875055"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
             <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer" />
