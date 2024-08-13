@@ -12,7 +12,6 @@ import resumePDF from "../../assets/Resume.pdf";
 import myPhoto from "../../assets/myPhoto.jpg";
 
 const Hero = () => {
-  
   return (
     <div id="home" className={` bg-gradient-to-r from-green-200 to-blue-200 `}>
       <div className=" container mx-auto pt-5 h-[750px] md:h-[100vh] md:flex-col-reverse sm:h-[780px]  flex sm:flex-col-reverse sm:pt-0 ">
@@ -27,13 +26,17 @@ const Hero = () => {
             <TypeAnimation
               data-aos="fade-up"
               sequence={[
+                "Mern Stack Developer",
+                2000,
                 "Web Developer",
                 2000,
                 "Web Designer",
                 2000,
                 "Software Engineer",
                 2000,
-                "Full Stack Developer",
+                "Meta Ads Marketing",
+                2000,
+                "Meta Ads Analytics",
                 2000,
                 "",
               ]}
@@ -79,19 +82,28 @@ const Hero = () => {
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://www.linkedin.com/in/harmanjot-singh-sidhu-01347a185/">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/harmanjot-singh-sidhu-01347a185/"
+                >
                   {" "}
                   <FaLinkedinIn className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://www.instagram.com/harman___sidhu___/">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/harman___sidhu___/"
+                >
                   {" "}
                   <AiFillInstagram className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://www.facebook.com/harman.sidhu.3591267">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/harman.sidhu.3591267"
+                >
                   {" "}
                   <FaFacebook className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
@@ -107,14 +119,10 @@ const Hero = () => {
         </div>
         <div className="right  top-5 flex-1 flex items-center justify-center md:items-end sm:items-end">
           <div className="relative h-[88%] w-fit flex items-center sm:items-end">
-          
-    
             <img
               data-aos="flip-left"
-              
               className="  h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0 rounded-full"
               src={myPhoto}
-              
               alt="mine"
             />
             <div className=" absolute bottom-10 md:bottom-3 right-8 md:right-2">

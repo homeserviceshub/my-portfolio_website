@@ -2,8 +2,7 @@ import React from "react";
 import ProgressBar from "../../chip/ProgressBar";
 import SkillBox from "../../chip/SkillBox";
 
-import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
-
+import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript } from "react-icons/io";
 
 import {
   SiJavascript,
@@ -11,10 +10,11 @@ import {
   SiMongodb,
   SiExpress,
   SiBulma,
+  SiMeta,
 } from "react-icons/si";
-import { GrCode, GrReactjs } from "react-icons/gr";
+import { GrReactjs } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 
 const Skills = ({ darkMode }) => {
@@ -43,23 +43,46 @@ const Skills = ({ darkMode }) => {
               className="progress flex items-center h-[100%] justify-end md:justify-center"
             >
               <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
-                <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} className="bg-blue-500" />
-                <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
+                <ProgressBar
+                  logo={<IoLogoHtml5 />}
+                  name={"HTML"}
+                  value={95}
+                  className="bg-blue-500"
+                />
+                <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={95} />
                 <ProgressBar
                   logo={<SiJavascript />}
                   name={"Javascript"}
-                  value={85}
+                  value={90}
                 />
-                <ProgressBar logo={<FaReact />} name={"React Js"} value={89} />
+                <ProgressBar logo={<FaReact />} name={"React Js"} value={96} />
+                <ProgressBar
+                  logo={<SiNextdotjs />}
+                  name={"Next Js"}
+                  value={80}
+                />
                 <ProgressBar
                   logo={<SiTailwindcss />}
                   name={"Tailwind CSS"}
-                  value={70}
+                  value={80}
+                />
+                <ProgressBar logo={<SiBulma />} name={"Bulma CSS"} value={78} />
+                <ProgressBar logo={<FaNodeJs />} name={"Node Js"} value={85} />
+                <ProgressBar
+                  logo={<SiExpress />}
+                  name={"Express Js"}
+                  value={90}
+                />
+
+                <ProgressBar
+                  logo={<SiMongodb />}
+                  name={"Mongo DB"}
+                  value={90}
                 />
                 <ProgressBar
-                  logo={<SiBulma />}
-                  name={"Bulma CSS"}
-                  value={70}
+                  logo={<SiMeta />}
+                  name={"Meta Marketing"}
+                  value={80}
                 />
               </div>
             </div>
@@ -67,6 +90,12 @@ const Skills = ({ darkMode }) => {
           {/* right box */}
           <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
             <div className="first2 flex flex-col gap-10">
+              <SkillBox
+                logo={<IoLogoJavascript />}
+                black={"white"}
+                white={"black"}
+                skill={"Javascript"}
+              />
               <SkillBox
                 logo={<IoLogoNodejs />}
                 black={"white"}
@@ -82,20 +111,25 @@ const Skills = ({ darkMode }) => {
             </div>
             <div className="last2 flex flex-col gap-10">
               <SkillBox
+                className=""
+                logo={<GrReactjs />}
+                black={"black"}
+                white={"white"}
+                skill={"ReactJs"}
+              />
+              <SkillBox
                 logo={<SiExpress />}
                 black={"black"}
                 white={"white"}
                 skill={"Express Js"}
               />
               <SkillBox
-                className=""
-                logo={
-                  <GrReactjs/>
-                }
+                logo={<SiMeta />}
                 black={"black"}
                 white={"white"}
-                skill={"ReactJs"}
+                skill={"Meta Ads"}
               />
+
               {/* <SkillBox
                 className=""
                 logo={

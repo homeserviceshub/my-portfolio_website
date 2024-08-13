@@ -87,13 +87,13 @@ const Resume = () => {
                 <p className=" text-[.9rem] text-justify text-gray-500">
                   I pursued a Bachelor of Technology in Computer Science from
                   Amritsar College of Engg. and Technology College, graduating
-                  in 2023 with a CGPA of 7. Throughout my academic journey, I
-                  engaged in diverse projects that translated theoretical
-                  knowledge into practical solutions. My participation in coding
-                  competitions honed my ability to solve complex problems under
-                  pressure. Collaborating with peers on group projects refined
-                  my teamwork and leadership skills. Beyond academics, I
-                  actively participated in clubs and workshops.
+                  in 2023. Throughout my academic journey, I engaged in diverse
+                  projects that translated theoretical knowledge into practical
+                  solutions. My participation in coding competitions honed my
+                  ability to solve complex problems under pressure.
+                  Collaborating with peers on group projects refined my teamwork
+                  and leadership skills. Beyond academics, I actively
+                  participated in clubs and workshops.
                 </p>
               </div>
             </div>
